@@ -14,7 +14,7 @@ anyOf:
             description: |-
                 :example: ``INSPIRE-12345678``
             minLength: 1
-            pattern: ^INSPIRE-\d{8}$
+            pattern: ^INSPIRE-\d{8}(?<!00000000)$
             type: string
     required:
     - schema
